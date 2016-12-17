@@ -1,5 +1,3 @@
-src/main/resources/*.properties
-!src/main/resources/*.properties.example
 out/
 .idea
 gen/
@@ -9,8 +7,5 @@ gen/
 target/
 atlassian-ide-plugin.xml
 classes/
-release.properties
 dependency-reduced-pom.xml
 cache/
-velocity.log*
-src/main/resources/META-INF/version/
