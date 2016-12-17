@@ -1,15 +1,3 @@
 - Caching remote resource provider
 - Alt resource paths (local/cache/cdn)?
-- Readme
-    - FreeMarker
-    - layout handling (thanks to JR)
-    - early view rendering
-    - jar/local resource serving
-    - Resource debugging
-    - Static content serving
-    - IsJar helper
-    - Figure Resource Caching
-        - Not actually caching, more build proc
-        - mvn clean
-        - WebApp Assets vs resources/public (rebuild to deploy)
-            - Jar fix
+- Less

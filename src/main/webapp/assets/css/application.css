@@ -1,5 +1,6 @@
 header {
     color: #400;
+    border-bottom: 1px dotted #666;
 }
 body {
     font-family: Verdana, sans-serif;
