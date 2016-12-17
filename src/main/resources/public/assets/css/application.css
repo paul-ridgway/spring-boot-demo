@@ -1,0 +1,13 @@
+header {
+    color: #400;
+}
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+    color: #040;
+}
+footer {
+    border-top: 1px dotted #666;
+    margin: 10px 0;
+    color: #004;
+}

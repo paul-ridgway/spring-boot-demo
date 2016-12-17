@@ -1,0 +1,11 @@
+- Figure Resource Caching
+- Caching remote resource provider
+- Alt resource paths (local/cache/cdn)?
+- Readme
+    - FreeMarker
+    - layout handling (thanks to JR)
+    - early view rendering
+    - jar/local resource serving
+    - Resource debugging
+    - Static content serving
+    - IsJar helper
