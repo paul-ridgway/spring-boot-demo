@@ -10,7 +10,10 @@
 <html>
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Demo
     <#if pageTitle??>
         :: ${pageTitle}
@@ -29,12 +32,46 @@
 </head>
 
 <body>
-<h1 id="title">Spring Boot Demo</h1>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spring Boot Demo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/another">Another Controller</a></li>
+                <li><a href="/another/page">Another Controller Page</a></li>
+            </ul>
+        <#--<ul class="nav navbar-nav navbar-right">-->
+        <#--<li><a href="../navbar/">Default</a></li>-->
+        <#--<li><a href="../navbar-static-top/">Static top</a></li>-->
+        <#--<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
+        <#--</ul>-->
+        </div>
+    </div>
+</nav>
+
+<div class="container">
 ${view_html}
+</div>
+
 </body>
+
 <footer>
-    application.css: <@spring.url "/assets/css/application.css" />.
-    view: ${view}
+    <div class="container">
+        application.css: <@spring.url "/assets/css/application.css" />.
+        view: ${view}
+    </div>
 </footer>
 
 </html>
