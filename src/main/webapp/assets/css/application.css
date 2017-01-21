@@ -6,7 +6,17 @@ body {
     font-family: Verdana, sans-serif;
     font-size: 12pt;
     color: #040;
+    margin: 10px;
+    padding: 10px;
 }
+
+h1#title {
+    background: #040;
+    color: #fff;
+    padding: 10px;
+    margin: -10px;
+}
+
 footer {
     border-top: 1px dotted #666;
     margin: 10px 0;

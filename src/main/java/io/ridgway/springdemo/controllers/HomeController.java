@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @RequestMapping("/")
-    public String index(Model model) {
-        model.addAttribute("test", "value");
+    public String index(final Model model) {
+        model.addAttribute("test", "This value was set in the controller!");
         return "home/index";
     }
 
