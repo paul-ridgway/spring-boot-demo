@@ -11,6 +11,7 @@ public class LayoutInterceptor extends HandlerInterceptorAdapter {
 
     private static final String DEFAULT_LAYOUT = "layout/application";
     private static final String VIEW_ATTRIBUTE_NAME = "view";
+    private static final String CONTROLLER_ATTRIBUTE_NAME = "controller";
 
     @Override
     public void postHandle(final HttpServletRequest request, final HttpServletResponse response, final Object handler,
@@ -22,10 +23,11 @@ public class LayoutInterceptor extends HandlerInterceptorAdapter {
         if (isRedirectOrForward(originalViewName)) {
             return;
         }
-
-        final String layoutName = getLayoutName((HandlerMethod) handler);
+        final HandlerMethod handlerMethod = (HandlerMethod) handler;
+        final String layoutName = getLayoutName(handlerMethod);
         modelAndView.setViewName(layoutName);
         modelAndView.addObject(VIEW_ATTRIBUTE_NAME, originalViewName);
+        modelAndView.addObject(CONTROLLER_ATTRIBUTE_NAME, handlerMethod.getBeanType().getSimpleName());
     }
 
     private boolean isRedirectOrForward(final String viewName) {

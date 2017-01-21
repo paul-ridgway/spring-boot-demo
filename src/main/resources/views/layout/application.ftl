@@ -48,15 +48,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="/another">Another Controller</a></li>
-                <li><a href="/another/page">Another Controller Page</a></li>
+                <li class="${controller?switch('HomeController', 'active', '')}"><a href="/">Home</a></li>
+                <li class="${view?switch('another/index', 'active', '')}"><a href="/another">Another Controller</a></li>
+                <li class="${view?switch('another/page', 'active', '')}"><a href="/another/page">Another Controller Page</a></li>
             </ul>
-        <#--<ul class="nav navbar-nav navbar-right">-->
-        <#--<li><a href="../navbar/">Default</a></li>-->
-        <#--<li><a href="../navbar-static-top/">Static top</a></li>-->
-        <#--<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
-        <#--</ul>-->
         </div>
     </div>
 </nav>
@@ -69,8 +64,8 @@ ${view_html}
 
 <footer>
     <div class="container">
-        application.css: <@spring.url "/assets/css/application.css" />.
-        view: ${view}
+        Controller: ${controller}.
+        View: ${view}.
     </div>
 </footer>
 
