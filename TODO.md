@@ -1,3 +1,1 @@
-- Caching remote resource provider
-- Alt resource paths (local/cache/cdn)?
 - Less
