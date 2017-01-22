@@ -18,6 +18,11 @@ one to scaffold a project with a simple command.
 
 I started by generating a project using http://start.spring.io/ 
 
+#### WebJars
+- JQuery
+- Bootstrap
+- Data Tables
+
 #### FreeMarker
 - FreeMarker
 

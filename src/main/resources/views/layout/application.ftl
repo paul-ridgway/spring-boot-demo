@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap-theme.css"/>
-    <link rel="stylesheet" href="/webjars/datatables/1.10.12/css/dataTables.bootstrap.min.css"/>
+    <#--<link rel="stylesheet" href="/webjars/datatables/1.10.12/css/dataTables.bootstrap.min.css"/>-->
 
     <link rel="stylesheet" href="<@spring.url "/assets/css/application.css" />"/>
     <script src="<@spring.url "/assets/js/application.js" />"></script>
